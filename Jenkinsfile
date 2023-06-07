@@ -11,10 +11,9 @@ pipeline {
 
          stage('Build Discovery service') {
               steps {
-                 dir ('eurekaDiscovery') {
-                 sh "mvn clean install"
-                 }
 
+                 sh "mvn clean install"
+                
               }
          }
 
